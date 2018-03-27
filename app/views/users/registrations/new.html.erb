@@ -1,4 +1,4 @@
-<h2>Sign up</h2>
+<h2>Registrarse</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -21,9 +21,9 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="btn waves-effect lime accent-3">
+    <span class="black-text text-darken-2"><%= f.submit "Registrar" %></span>
   </div>
 <% end %>
-
+<br>
 <%= render "users/shared/links" %>
