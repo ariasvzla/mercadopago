@@ -11,10 +11,10 @@
 <script>
 $("#pagar-btn").click(function() {
 	<% if user_signed_in? %>
-  $( "#Registrarse-btn" ).show()
+  $( "#Registrarse-btn" ).show(500)
      <%else%>
-     	 $( "#ingresar-btn" ).show()
-     	 $( "#pagar-btn" ).hide()
+     	 $( "#ingresar-btn" ).show(500)
+     	 $( "#pagar-btn" ).hide(500)
     <%end%>
 });
 </script>
