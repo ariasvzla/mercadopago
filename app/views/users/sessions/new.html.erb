@@ -1,21 +1,22 @@
 <h2>Ingresar</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="input-field col s6">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+<div class="row">
+          <div class="input-field col s6">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+          </div>
 
-  <div class="input-field col s6">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-
-  <div class="btn waves-effect lime accent-3">
-    <span class="black-text text-darken-2"><%= f.submit "Entrar" %></span>
-  </div>
-
+        <div class="input-field col s6">
+          <%= f.label :password %><br />
+          <%= f.password_field :password, autocomplete: "off" %>
+        </div>
+ </div>
+        <div class="btn waves-effect lime accent-3">
+          <span class="black-text text-darken-2"><%= f.submit "Entrar" %></span>
+        </div>
+ 
+<div class="row">
 <!--<% if devise_mapping.rememberable? -%>
 <div class="field">
 <%= f.check_box :remember_me %>
@@ -26,3 +27,4 @@
 <% end %>
 <br>
 <%= render "users/shared/links" %>
+</div>

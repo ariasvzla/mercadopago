@@ -1,29 +1,38 @@
-<h2>Registrarse</h2>
-
+<h5>Registrarse</h5>
+<form class="col s12">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+    <div class="row">
+                <div class="input-field col s4">
+                  <%= f.label :Nombre %><br />
+                  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+                <div class="input-field col s6">
+                  <%= f.label :Correo_electronico %><br />
+                  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                </div>
   </div>
+  <div class="row">
+              <div class="input-field col s6">
+                    <%= f.label :Contrasena %>
+                    <% if @minimum_password_length %>
+                    <em>(<%= @minimum_password_length %> caracteres minimo)</em>
+                    <% end %><br />
+                    <%= f.password_field :password, autocomplete: "off" %>
+              </div>
 
+              <div class="input-field col s6">
+                <%= f.label :Confirme_contrasena %><br />
+                <%= f.password_field :password_confirmation, autocomplete: "off" %>
+              </div>
+</div>
   <div class="btn waves-effect lime accent-3">
     <span class="black-text text-darken-2"><%= f.submit "Registrar" %></span>
-  </div>
+</div>
 <% end %>
 <br>
 <%= render "users/shared/links" %>
+</div>
