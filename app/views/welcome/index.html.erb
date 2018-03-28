@@ -11,10 +11,30 @@
 <script>
 $("#pagar-btn").click(function() {
 	<% if user_signed_in? %>
-  $( "#Registrarse-btn" ).show(500)
-     <%else%>
-     	 $( "#ingresar-btn" ).show(500)
-     	 $( "#pagar-btn" ).hide(500)
+
+
+
+
+
+ 
+
+
+ 
+     <%else%> 	
+     	 $('#pagar-btn').addClass('animated bounceOut')
+
+     	 setTimeout(function(){
+
+         $( "#Registrarse-btn" ).show(700,function() {
+
+         	setTimeout(function(){
+                $( "#ingresar-btn" ).show(800);
+                $('#pagar-btn').hide(200)
+            },200); 
+         })
+     },200); 
+
+
     <%end%>
 });
 </script>
