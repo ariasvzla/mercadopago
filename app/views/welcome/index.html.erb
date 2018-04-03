@@ -1,18 +1,22 @@
+
 <h3>Plataforma de Pagos</h3>
  <a id="pagar-btn" class="waves-effect red accent-4 btn-large"><span class="black-text text-darken-2">Pagar Ahora</span></a>	
    <a id="Registrarse-btn" class="waves-effect indigo darken-4 btn-large" href="/users/sign_up">Registrarse</a>	
    <a id="ingresar-btn" class="waves-effect lime accent-3 btn-large" href="/users/sign_in"><span class="black-text text-darken-2">Ingresar</span></a>
 
-<a id="pagarmp" mp-mode="dftl" href="https://www.mercadopago.com/mlv/checkout/start?pref_id=35930295-8c5bb75f-b183-4183-9e7e-c958548e6b6c" name="MP-payButton" class='blue-ar-l-rn-none'>Pagar Aceite FORTLUB</a>
-<h5>Powered by <%= image_tag "mplogo.png", :size =>"110x25" %></h5> 
+<a id="pagarmp" mp-mode="dftl" href="https://www.mercadopago.com/mlv/checkout/start?pref_id=35930295-8c5bb75f-b183-4183-9e7e-c958548e6b6c" name="MP-payButton" class='blue-ar-l-rn-none'>Pagar ACEITE FORTLUB</a>
+
+<h6>Powered by <%= image_tag "mplogo.png", :size =>"90x15" %></h6> 
 
 
- 
+ </div>
 
 <script>
 	$( "#Registrarse-btn" ).hide();
 	$( "#ingresar-btn" ).hide();
     $("#pagarmp").hide();
+  
+
 </script>
 <script>
 $("#pagar-btn").click(function() {
@@ -21,6 +25,8 @@ $("#pagar-btn").click(function() {
 
 
      <%else%> 	
+
+
      	 $('#pagar-btn').addClass('animated bounceOut')
 
      	 setTimeout(function(){

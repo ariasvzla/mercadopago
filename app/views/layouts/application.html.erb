@@ -8,11 +8,14 @@
       <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 
-<script type="text/javascript">
+   <script type="text/javascript">
+
+
 (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
-</script>
 
+</script>
 
     <title>Mercadopago</title>
     <%= csrf_meta_tags %>
@@ -23,12 +26,12 @@
   <body>
 
   	<!-- Dropdown Structure -->
-<ul id="dropdown2" class="dropdown-content">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
+<!-- <ul id="dropdown2" class="dropdown-content">
+  <li><a href="#!">One</a></li>
+  <li><a href="#!">Two</a></li>
   <li class="divider"></li>
   <li><a href="#!">three</a></li>
-</ul>
+</ul> -->
   
      <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
@@ -49,7 +52,9 @@
       
       <div class="row center">
       	<div class="card-panel">
+       
        <%= yield %>
+
            <!--Toastr notifications-->
        <% unless flash.empty? %>
               <script type="text/javascript">
@@ -80,27 +85,27 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Opciones</h5>
+            <!-- <h5 class="center">Opciones</h5> -->
 
-            <p class="light"> blablab</p>
+            <!-- <p class="light"> blablab</p> -->
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">opciones</h5>
+            <!-- <h5 class="center">opciones</h5> -->
 
-            <p class="light">blablala</p>
+            <!-- <p class="light">blablala</p> -->
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">opciones</h5>
+            <!-- <h5 class="center">opciones</h5>
 
-            <p class="light">blabla</p>
+            <p class="light">blabla</p> -->
           </div>
         </div>
       </div>
@@ -113,35 +118,35 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company </h5>
+          <!-- <h5 class="white-text">Company </h5>
           <p class="grey-text text-lighten-4">josmar arias es blablaba</p>
-
+ -->
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <!-- <h5 class="white-text">Settings</h5>
           <ul>
             <li><a class="white-text" href="#!">Link 1</a></li>
             <li><a class="white-text" href="#!">Link 2</a></li>
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+          </ul> -->
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+         <!--  <h5 class="white-text">Connect</h5>
           <ul>
             <li><a class="white-text" href="#!">Link 1</a></li>
             <li><a class="white-text" href="#!">Link 2</a></li>
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
+    <!--   <div class="container">
       Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
+      </div> -->
     </div>
   </footer>
 
